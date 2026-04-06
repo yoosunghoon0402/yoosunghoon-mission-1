@@ -5,7 +5,7 @@
 
 ## 1) Git 설정
 
-### 1-1) 입력
+1-1) 입력
 ```bash
     git config --global user.name "yoosunghoon"
     git config --global user.email "yoosunghoon0402@gmail.com"
@@ -13,7 +13,7 @@
     git config --list 
 ```
 
-### 1-2) 결과
+1-2) 결과
 ```bash
     Last login: Mon Apr  6 15:36:36 on console
     yoosh979957@c3r2s1 ~ % git config --global user.name "yoosunghoon"~  
@@ -30,13 +30,13 @@
 
 ## 2) 저장소 생성: GitHub에서 새 저장소를 만들고 git clone으로 로컬에 가져옵니다.
 
-2-1) GitHub 작업
+2-1) GitHub 에서 원격 저장소 만들기
 - github.com 로그인
 - 새로운 repository 생성
 - 권한 Public 지정
 - HPPTS 탭 선택된 상태에서 저장소 주소 복사
 
-2-2) 터미널 작업
+2-2) 터미널에서 로컬로 복제하기
 - cd ~/Documents  
 - 터미널에서 로컬로 복제(git clone) : git clone 뒤에 저장소 주소를 붙여 넣기 
 ```bash
@@ -47,10 +47,17 @@ warning: You appear to have cloned an empty repository.
 yoosh979957@c3r2s1 Documents %
 ```
 
+2-3) 생성된 폴더로 진입 및 연결 상태 확인
 
+cd yoosunghoon-mission-1
+git remote -v
 
-
-
+```bash
+yoosh979957@c3r2s1 yoosunghoon-mission-1 % git remote -v
+origin	https://github.com/yoosunghoon0402/yoosunghoon-mission-1.git (fetch)
+origin	https://github.com/yoosunghoon0402/yoosunghoon-mission-1.git (push)
+yoosh979957@c3r2s1 yoosunghoon-mission-1 %
+```
 
 
 # 2. 최종 결과물
