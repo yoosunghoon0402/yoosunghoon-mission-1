@@ -3,7 +3,7 @@
     * Git 사용자 정보/기본 브랜치 설정을 완료하고 git config --list결과를 기록한다.
     * GitHub 로그인 및 저장소 연동을 완료하고, 연동 증거(스크린샷 등)를 기술 문서에 첨부한다.
 
-## 1) Git & GitHub 초기 설정
+## 1) Git 설정
 
 ### 1-1) 입력
 ```bash
@@ -27,6 +27,14 @@
     yoosh979957@c3r2s1 ~ %
 ```
 
+
+## 2) 저장소 생성: GitHub에서 새 저장소를 만들고 git clone으로 로컬에 가져옵니다.
+    - github.com 로그인
+    - 새로운 repository 생성
+    - 권한 Public 지정
+    - HPPTS 탭 선택된 상태에서 저장소 주소 복사
+    - 터미널에서 로컬로 복제(git clone)
+    `cd ~/Documents  # 문서 폴더로 이동`
 
 
 
