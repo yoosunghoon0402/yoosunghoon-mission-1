@@ -5,12 +5,12 @@
 
 ## 1) Git & GitHub 초기 설정
 
-    ```bash
+```bash
     git config --global user.name "yoosunghoon"
     git config --global user.email "yoosunghoon0402@gmail.com"
     git config --global init.defaultBranch main
     git config --list 
-    ```
+```
 
 
 
