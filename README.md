@@ -12,6 +12,19 @@
     git config --list 
 ```
 
+### 결과 화면
+```bash
+    Last login: Mon Apr  6 15:36:36 on console
+    yoosh979957@c3r2s1 ~ % git config --global user.name "yoosunghoon"~  
+    yoosh979957@c3r2s1 ~ % git config --global user.email "yoosunghoon0402@gmail.com"
+    yoosh979957@c3r2s1 ~ % git config --global init.defaultBranch main
+    yoosh979957@c3r2s1 ~ % git config --list
+    credential.helper=osxkeychain
+    user.name=yoosunghoon~
+    user.email=yoosunghoon0402@gmail.com
+    init.defaultbranch=main
+    yoosh979957@c3r2s1 ~ %
+```
 
 
 
