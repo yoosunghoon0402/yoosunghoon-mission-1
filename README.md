@@ -5,6 +5,7 @@
 
 ## 1) Git & GitHub 초기 설정
 
+### 1-1) 입력
 ```bash
     git config --global user.name "yoosunghoon"
     git config --global user.email "yoosunghoon0402@gmail.com"
@@ -12,7 +13,7 @@
     git config --list 
 ```
 
-### 결과 화면
+### 1-2) 결과
 ```bash
     Last login: Mon Apr  6 15:36:36 on console
     yoosh979957@c3r2s1 ~ % git config --global user.name "yoosunghoon"~  
