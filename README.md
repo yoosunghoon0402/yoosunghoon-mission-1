@@ -30,14 +30,13 @@
 
 ## 2) 저장소 생성: GitHub에서 새 저장소를 만들고 git clone으로 로컬에 가져옵니다.
 
-### 2-1) 작업 순서
-        github.com 로그인
-        새로운 repository 생성
-        권한 Public 지정
-        HPPTS 탭 선택된 상태에서 저장소 주소 복사
-        터미널에서 로컬로 복제(git clone)
-        cd ~/Documents  # 문서 폴더로 이동
-
+	2-1) 작업 순서
+      - github.com 로그인
+      - 새로운 repository 생성
+      - 권한 Public 지정
+      - HPPTS 탭 선택된 상태에서 저장소 주소 복사
+      - 터미널에서 로컬로 복제(git clone)
+      - cd ~/Documents  # 문서 폴더로 이동
 
 
 # 2. 최종 결과물
