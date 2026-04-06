@@ -1,4 +1,22 @@
-2. 최종 결과물
+
+# 1. Git 설정 및 GitHub 연동
+    * Git 사용자 정보/기본 브랜치 설정을 완료하고 git config --list결과를 기록한다.
+    * GitHub 로그인 및 저장소 연동을 완료하고, 연동 증거(스크린샷 등)를 기술 문서에 첨부한다.
+
+## 1) Git & GitHub 초기 설정
+
+    ```bash
+    git config --global user.name "yoosunghoon"
+    git config --global user.email "yoosunghoon0402@gmail.com"
+    git config --global init.defaultBranch main
+    git config --list 
+    ```
+
+
+
+
+
+# 2. 최종 결과물
 
 다음 조건을 만족하는 개발 워크스테이션 구축 결과물을 완성한다.
 
@@ -39,7 +57,7 @@
 	- 민감한 개인 정보(ID/PW, 토큰 등)가 포함되지 않도록 주의한다.
 
 --------------------------------------------------------------------
-3. 과제 목표
+# 3. 과제 목표
 
 이 과제를 마친 후, 학습자는 아래를 스스로 설명할 수 있어야 한다.
 
@@ -52,7 +70,7 @@
 
 --------------------------------------------------------------------
 
-4. 기능 요구 사항
+# 4. 기능 요구 사항
 
 다음 요구사항을 모두 만족해야 한다.
 
@@ -100,9 +118,6 @@
 	- Docker 볼륨을 생성하고 컨테이너에 연결한다.
 	- 컨테이너 삭제 전/후로 데이터를 확인하여 데이터가 유지됨을 증명한다.
 	- 기술 문서에 생성/연결/검증 절차(명령+출력)를 포함한다.
-10. Git 설정 및 GitHub 연동
-    * Git 사용자 정보/기본 브랜치 설정을 완료하고 git config --list결과를 기록한다.
-    * GitHub 로그인 및 저장소 연동을 완료하고, 연동 증거(스크린샷 등)를 기술 문서에 첨부한다.
 11. 보안 및 개인정보 보호
     * 기술 문서/로그/스크린샷에 토큰, 비밀번호, 개인키, 인증 코드 등이 포함되지 않도록 마스킹한다.
     * 의심되는 민감정보가 노출된 경우, 즉시 히스토리/문서에서 제거하고 재발급 절차를 수행한다 (가능한 범위에서).
@@ -110,7 +125,7 @@
 
 
 --------------------------------------------------------------------
-5. 보너스 과제 (선택)
+# 5. 보너스 과제 (선택)
 
 1. Docker Compose 기초
 	- docker-compose.yml의 기본 구조를 학습하고, 단일 서비스를 Compose로 실행한다.
@@ -134,14 +149,14 @@
 
 
 --------------------------------------------------------------------
-6. 개발 환경
+# 6. 개발 환경
 
 N/A
 제약조건
 
 
 --------------------------------------------------------------------
-7. 제약 사항
+# 7. 제약 사항
 
 - 제출 방식
 	- 제출은 GitHub Repository 링크로 진행한다.
@@ -161,7 +176,7 @@ Test Case
 
 
 --------------------------------------------------------------------
-8. 결과 예시
+# 8. 결과 예시
 
 아래는 참고 예시다. 그대로 제출하면 안 된다. 실제 폴더명/포트/로그 문구/구성은 달라도 된다.
 
@@ -186,20 +201,24 @@ Test Case
 - [x] Git 설정 + VSCode GitHub 연동
 
 ## 3) 수행 로그(발췌)
-bash$ pwd
+```bash
+$ pwd
 /home/user
 $ mkdir -p ~/codyssey/practice
 $ ls -la
 ...
-
+```
 
 - Dockerfile 커스텀 예시
+```bash
 FROM nginx:alpine
 LABEL org.opencontainers.image.title="my-custom-nginx"
 ENV APP_ENV=dev
 COPY site/ /usr/share/nginx/html/
+```
 
 - Docker 포트 매핑 실행 로그 예시
+```bash
 $ docker build -t my-web:1.0 .
 $ docker run -d -p 8080:5000 --name my-web-8080 my-web:1.0
 $ curl <http://localhost:8080>
@@ -208,8 +227,10 @@ Hello
 $ docker run -d -p 8081:5000 --name my-web-8081 my-web:1.0
 $ curl <http://localhost:8081>
 Hello
+```
 
 - 볼륨 영속성 예시
+```bash
 $ docker volume create mydata
 $ docker run -d --name vol-test -v mydata:/data ubuntu sleep infinity
 $ docker exec -it vol-test bash -lc "echo hi > /data/hello.txt && cat /data/hello.txt"
@@ -219,16 +240,4 @@ $ docker rm -f vol-test
 $ docker run -d --name vol-test2 -v mydata:/data ubuntu sleep infinity
 $ docker exec -it vol-test2 bash -lc "cat /data/hello.txt"
 hi
-
-
-
-`docker --version`
-
-```bash
-$ docker --version
-Docker version 24.0.5, build ced0996
 ```
-
-
-
-
