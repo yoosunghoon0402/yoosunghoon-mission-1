@@ -30,13 +30,27 @@
 
 ## 2) 저장소 생성: GitHub에서 새 저장소를 만들고 git clone으로 로컬에 가져옵니다.
 
-2-1) 작업 순서
+2-1) GitHub 작업
 - github.com 로그인
 - 새로운 repository 생성
 - 권한 Public 지정
 - HPPTS 탭 선택된 상태에서 저장소 주소 복사
-- 터미널에서 로컬로 복제(git clone)
-- cd ~/Documents  # 문서 폴더로 이동
+
+2-2) 터미널 작업
+- cd ~/Documents  
+- 터미널에서 로컬로 복제(git clone) : git clone 뒤에 저장소 주소를 붙여 넣기 
+```bash
+git clone https://github.com/yoosunghoon0402/yoosunghoon-mission-1.git
+
+Cloning into 'yoosunghoon-mission-1'...
+warning: You appear to have cloned an empty repository.
+yoosh979957@c3r2s1 Documents %
+```
+
+
+
+
+
 
 
 # 2. 최종 결과물
