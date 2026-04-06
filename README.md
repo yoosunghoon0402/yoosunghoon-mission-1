@@ -28,7 +28,7 @@
 ```
 
 
-## 2) 저장소 생성: GitHub에서 새 저장소를 만들고 git clone으로 로컬에 가져옵니다.
+## 2) 저장소 생성
 
 2-1) GitHub 에서 원격 저장소 만들기
 - github.com 로그인
@@ -49,8 +49,8 @@ yoosh979957@c3r2s1 Documents %
 
 2-3) 생성된 폴더로 진입 및 연결 상태 확인
 
-cd yoosunghoon-mission-1
-git remote -v
+- cd yoosunghoon-mission-1
+- git remote -v
 
 ```bash
 yoosh979957@c3r2s1 yoosunghoon-mission-1 % git remote -v
@@ -58,6 +58,9 @@ origin	https://github.com/yoosunghoon0402/yoosunghoon-mission-1.git (fetch)
 origin	https://github.com/yoosunghoon0402/yoosunghoon-mission-1.git (push)
 yoosh979957@c3r2s1 yoosunghoon-mission-1 %
 ```
+
+
+
 
 
 # 2. 최종 결과물
